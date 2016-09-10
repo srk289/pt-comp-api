@@ -1,0 +1,21 @@
+{
+  "name": "pt-comp-api",
+  "authors": [
+    "Srikanth Kondaparthy <srikanth.kondaparthy@ge.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer#^1.6.1",
+    "iron-ajax": "^1.4.3"
+  }
+}

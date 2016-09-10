@@ -1,0 +1,25 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/iron-ajax/iron-ajax.html">
+<dom-module id="pt-comp-api">
+	<style>
+		:host{
+			color: red;
+		}
+	</style>
+	<template>
+		<h1>It works</h1>
+		<iron-ajax auto="" url="http://www.json-generator.com/api/json/get/cdMWdVMyaa?indent=2" handle-as="json" last-response="{{response}}"></iron-ajax>
+
+		<template is="dom-repeat" items="{{response}}" >
+			{{item.id}}<br>
+			{{item.name}}<br>
+			{{item.profession}}
+		</template>
+	</template>
+</dom-module>
+
+<script>
+	Polymer({
+		is: 'pt-comp-api'
+	})
+</script>
